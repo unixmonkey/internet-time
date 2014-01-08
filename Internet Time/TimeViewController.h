@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface TimeViewController : UIViewController
+{
+    IBOutlet UILabel *internetTime;
+    
+}
+
+- (void)updateInternetTime:(NSTimer *)timer;
+
+@property UILocalNotification *localNotification;
 
 @end
