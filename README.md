@@ -47,7 +47,9 @@ Then you will need
 * Macintosh?
 
 Step 1: Download this.
+
 Step 2: Double click the thingy that isn't a folder
+
 Step 3: Click play (or Command+r).
 
 If that works for you, awesome. If not, you may be out of luck, as I have no idea how to do things on the computer.
