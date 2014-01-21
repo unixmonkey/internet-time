@@ -11,10 +11,13 @@
 @interface TimeViewController : UIViewController
 {
     IBOutlet UILabel *internetTime;
-    
+    IBOutlet UILabel *localTime;
 }
 
 - (void)updateInternetTime:(NSTimer *)timer;
+- (void)updateLocalTime:(NSTimer *)timer;
+- (void)createLocalNotifications;
+- (float)getTimeInBeats;
 
 @property UILocalNotification *localNotification;
 
