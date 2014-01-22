@@ -14,6 +14,7 @@
     IBOutlet UILabel *localTime;
 }
 
+- (void)startTimers;
 - (void)updateInternetTime:(NSTimer *)timer;
 - (void)updateLocalTime:(NSTimer *)timer;
 - (void)createLocalNotifications;

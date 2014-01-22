@@ -23,6 +23,14 @@
     // set up local notification service so we can update the badge number
     self.localNotification = [[UILocalNotification alloc] init];
     
+    [self startTimers];
+    
+    [self createLocalNotifications];
+    
+}
+
+- (void)startTimers
+{
     // timer to update internet time every 1000th of a beat
     [NSTimer scheduledTimerWithTimeInterval:0.864 // 1/100th of a .beat is 0.864 seconds
                                      target:self
@@ -36,9 +44,6 @@
                                    selector:@selector(updateLocalTime:)
                                    userInfo:nil
                                     repeats:YES];
-    
-    [self createLocalNotifications];
-    
 }
 
 - (void)createLocalNotifications
